@@ -354,7 +354,7 @@ namespace dxvk {
     dsInfo.depthTestEnable        = state.dsEnableDepthTest;
     dsInfo.depthWriteEnable       = state.dsEnableDepthWrite;
     dsInfo.depthCompareOp         = state.dsDepthCompareOp;
-    dsInfo.depthBoundsTestEnable  = VK_FALSE;
+    dsInfo.depthBoundsTestEnable  = state.dsEnableDepthBoundsTest;
     dsInfo.stencilTestEnable      = state.dsEnableStencilTest;
     dsInfo.front                  = state.dsStencilOpFront;
     dsInfo.back                   = state.dsStencilOpBack;
